@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  start_date: 2021-10-26 20:43:01
+  end_date: 2021-10-26 20:43:01
+  pool: false
+  sport_center: false
+  state: one
+  camping: one
+
+two:
+  user: two
+  start_date: 2021-10-26 20:43:01
+  end_date: 2021-10-26 20:43:01
+  pool: false
+  sport_center: false
+  state: two
+  camping: two

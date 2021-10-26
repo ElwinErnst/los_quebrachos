@@ -1,0 +1,2 @@
+class Cabin < ApplicationRecord
+end

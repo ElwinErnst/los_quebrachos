@@ -1,0 +1,2 @@
+module BathroomReservationsHelper
+end

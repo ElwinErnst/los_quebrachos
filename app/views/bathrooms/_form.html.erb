@@ -1,0 +1,32 @@
+<%= form_with(model: bathroom) do |form| %>
+  <% if bathroom.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(bathroom.errors.count, "error") %> prohibited this bathroom from being saved:</h2>
+
+      <ul>
+        <% bathroom.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :ubication %>
+    <%= form.text_field :ubication %>
+  </div>
+
+  <div class="field">
+    <%= form.label :shower %>
+    <%= form.number_field :shower %>
+  </div>
+
+  <div class="field">
+    <%= form.label :gender %>
+    <%= form.check_box :gender %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

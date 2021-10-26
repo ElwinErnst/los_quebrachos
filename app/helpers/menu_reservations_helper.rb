@@ -1,0 +1,2 @@
+module MenuReservationsHelper
+end

@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ubication: MyString
+  shower: 1
+  gender: false
+
+two:
+  ubication: MyString
+  shower: 1
+  gender: false

@@ -1,0 +1,2 @@
+class Camping < ApplicationRecord
+end

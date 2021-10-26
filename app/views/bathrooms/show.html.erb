@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ubication:</strong>
+  <%= @bathroom.ubication %>
+</p>
+
+<p>
+  <strong>Shower:</strong>
+  <%= @bathroom.shower %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @bathroom.gender %>
+</p>
+
+<%= link_to 'Edit', edit_bathroom_path(@bathroom) %> |
+<%= link_to 'Back', bathrooms_path %>
