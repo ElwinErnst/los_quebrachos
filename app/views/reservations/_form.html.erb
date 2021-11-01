@@ -41,9 +41,38 @@
     <%= form.text_field :state_id %>
   </div>
 
+
+
+  <div class="field">
+    <%= form.label :baños %>
+    <%= form.select :bathroom_ids, Bathroom.all.collect {|x| [x.gender,x.id]}, {}, :multiple => true, :size => 2 %>
+
+  </div>
+  <div class="field">
+    <%= form.label :menu %>
+    <%= form.select :menu_ids, Menu.all.collect {|x| [x.breakfast, x.dinner,x.id]}, {}, :multiple => true, :size => 5 %>
+
+  </div>
+  <div class="field">
+    <%= form.label :salon %>
+    <%= form.select :room_ids, Room.all.collect {|x| [x.name,x.id]}, {}, :multiple => true, :size => 5 %>
+
+  </div>
+  <div class="field">
+    <%= form.label :cabaña %>
+    <%= form.select :cabin_ids, Room.all.collect {|x| [x.name,x.id]}, {}, :multiple => true, :size => 5 %>
+
+  </div>
+  
+
+    
+
+
   <div class="field">
     <%= form.label :camping_id %>
-    <%= form.text_field :camping_id %>
+
+    <%= form.collection_select(:camping_id, Camping.all,:id, :id) %>
+
   </div>
 
   <div class="actions">
