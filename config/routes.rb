@@ -11,8 +11,10 @@ Rails.application.routes.draw do
   resources :campings
   resources :states
   devise_for :users
+  
 
 #pongo esta ruta solo por el primer commit hasta que hagamos las vistas de bienvenida
-  root "reservations#index"
+  #root "reservations#index"
+  root "cabin_reservations#index"
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

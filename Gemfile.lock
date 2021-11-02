@@ -89,6 +89,7 @@ GEM
     erubi (1.10.0)
     ffi (1.15.4)
     ffi (1.15.4-x64-mingw32)
+    ffi (1.15.4-x86-mingw32)
     globalid (0.5.2)
       activesupport (>= 5.0)
     hashie (4.1.0)
@@ -112,6 +113,8 @@ GEM
     msgpack (1.4.2)
     nio4r (2.5.8)
     nokogiri (1.12.5-x64-mingw32)
+      racc (~> 1.4)
+    nokogiri (1.12.5-x86-mingw32)
       racc (~> 1.4)
     nokogiri (1.12.5-x86_64-linux)
       racc (~> 1.4)
@@ -195,6 +198,8 @@ GEM
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
     sqlite3 (1.4.2)
+    tailwindcss-rails (0.5.1)
+      rails (>= 6.0.0)
     thor (1.1.0)
     tilt (2.0.10)
     turbolinks (5.2.1)
@@ -230,6 +235,7 @@ GEM
 
 PLATFORMS
   x64-mingw32
+  x86-mingw32
   x86_64-linux
 
 DEPENDENCIES
@@ -247,6 +253,7 @@ DEPENDENCIES
   selenium-webdriver
   spring
   sqlite3 (~> 1.4)
+  tailwindcss-rails (~> 0.5.1)
   turbolinks (~> 5)
   tzinfo-data
   wdm (>= 0.1.0)
@@ -258,4 +265,4 @@ RUBY VERSION
    ruby 3.0.2p107
 
 BUNDLED WITH
-   2.2.22
+   2.2.30

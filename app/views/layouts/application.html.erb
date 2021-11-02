@@ -6,11 +6,21 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+    <div class="bg-blue-200	 h-screen overflow-y-auto text-black">
+      <%= render "shared/navbar" %>  
+      <%= yield %>
+    </div>
+
   </body>
+
+    <%= render  'shared/footer' %>
+
 </html>
