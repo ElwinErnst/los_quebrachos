@@ -11,71 +11,80 @@
     </div>
   <% end %>
 
-  <div class="field">
+
+<div class='my-24 mx-96 text-black-200'>
+
+  <div class="field text-xl">
     <%= form.label :user_id %>
-    <%= form.text_field :user_id %>
+    <%= form.text_field :user_id, class: "p-2 focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-7 pr-12 border-gray-300 rounded-md", placeholder: "Nombre Usuario" %>
   </div>
 
-  <div class="field">
-    <%= form.label :start_date %>
-    <%= form.datetime_select :start_date %>
+  <div class="field text-xl">
+    <%= form.label :start_date, class: "flex w-full" %>
+    <div class="flex justify-center p-2 focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-7 pr-12 border-gray-300 rounded-md">
+      <%= form.datetime_select :start_date, class: "p-2 focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-7 pr-12 border-gray-300 rounded-md" %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :end_date %>
-    <%= form.datetime_select :end_date %>
+  <div class="field text-xl ">
+    <%= form.label :end_date, class: "flex w-full" %>
+    <div class="flex justify-center p-2 focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-7 pr-12 border-gray-300 rounded-md">
+      <%= form.datetime_select :end_date, :class => 'w-full h-10 pl-3 pr-6 text-base placeholder-gray-600 border rounded-lg appearance-none focus:shadow-outline' %>
+    </div>
+  </div>
+  <div class="field text-xl">
+    <%= form.label :pool, class: "flex w-full" %>
+    <%= form.check_box :pool, :class => 'm-1 justify-center	' %>
   </div>
 
-  <div class="field">
-    <%= form.label :pool %>
-    <%= form.check_box :pool %>
+  <div class="field text-xl">
+    <%= form.label :sport_center, class: "flex w-full" %>
+    <%= form.check_box :sport_center, :class => 'm-1' %>
   </div>
 
-  <div class="field">
-    <%= form.label :sport_center %>
-    <%= form.check_box :sport_center %>
-  </div>
-
-  <div class="field">
+  <div class="field text-xl">
     <%= form.label :soccerField %>
     <%= form.check_box :soccerField %>
   </div>
 
-  <div class="field">
+  <div class="field text-xl">
     <%= form.label :BeachVolleyball %>
     <%= form.check_box :BeachVolleyball %>
   </div>
 
- <div class="field">
+ <div class="field text-xl">
     <%= form.label :people %>
     <%= form.number_field :people %>
   </div>
 
 
 
-  <div class="field">
+  <div class="field text-xl">
     <%= form.label :state_id %>
-    <%= form.text_field :state_id %>
-  </div>
+    <div class="flex justify-center p-2 focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-7 pr-12 border-gray-300 rounded-md">
+      <%= form.text_field :state_id, :class => 'p-2 focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-7 pr-12 border-gray-300 rounded-md', placeholder:"Ingrese el nombre de la provincia." %>
+    </div>
+   </div>
 
 
 
-  <div class="field">
+  <div class="field text-xl">
     <%= form.label :baños %>
-    <%= form.select :bathroom_ids, Bathroom.all.collect {|x| [x.gender,x.id]}, {}, :multiple => true, :size => 2 %>
-
+    <div class="flex justify-center p-2 focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-7 pr-12 border-gray-300 rounded-md">
+      <%= form.select :bathroom_ids, Bathroom.all.collect {|x| [x.gender,x.id]}, {}, :multiple => true, :size => 2 %>
+    </div>
   </div>
-  <div class="field">
+  <div class="field text-xl">
     <%= form.label :menu %>
     <%= form.select :menu_ids, Menu.all.collect {|x| [x.breakfast, x.dinner,x.id]}, {}, :multiple => true, :size => 5 %>
 
   </div>
-  <div class="field">
+  <div class="field text-xl">
     <%= form.label :salon %>
     <%= form.select :room_ids, Room.all.collect {|x| [x.name,x.id]}, {}, :multiple => true, :size => 5 %>
 
   </div>
-  <div class="field">
+  <div class="field text-xl">
     <%= form.label :cabaña %>
     <%= form.select :cabin_ids, Room.all.collect {|x| [x.name,x.id]}, {}, :multiple => true, :size => 5 %>
 
@@ -85,7 +94,7 @@
     
 
 
-  <div class="field">
+  <div class="field text-xl">
     <%= form.label :camping_id %>
 
     <%= form.collection_select(:camping_id, Camping.all,:id, :id) %>
@@ -93,6 +102,9 @@
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <div class="flex w-full">
+      <%= form.submit "Crear Nueva Reserva", :class=> "my-3 w-full flex justify-center py-2 px-4 border border-transparent text-xl font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"  %>
+    </div>
   </div>
+</div>
 <% end %>
