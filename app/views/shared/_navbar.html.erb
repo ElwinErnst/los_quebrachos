@@ -1,0 +1,46 @@
+<div>
+  <nav class="bg-gradient-to-r from-green-700 to-blue-700">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center">
+          <div class="flex-shrink-0">
+          <div class='text-2xl text-white'>Los Quebrachos </div>
+          </div>
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-4">
+            <button
+                class="bg-green-600	 text-white hover:bg-purple-700 hover:text-white active:bg-purple-700 font-bold uppercase text-xs px-4 py-2 outline-none focus:outline-none mb-1 ease-linear transition-all duration-150"
+                type="button">
+                  <%= link_to 'Cabinas', cabins_path%>
+            </button>
+            <button
+                class="bg-green-600	 text-white hover:bg-purple-700 hover:text-white active:bg-purple-700 font-bold uppercase text-xs px-4 py-2 outline-none focus:outline-none mb-1 ease-linear transition-all duration-150"
+                type="button">
+                  <%= link_to 'Campings', campings_path%>
+            </button>
+            <button
+                class="bg-green-600	 text-white hover:bg-purple-700 hover:text-white active:bg-purple-700 font-bold uppercase text-xs px-4 py-2 outline-none focus:outline-none mb-1 ease-linear transition-all duration-150"
+                type="button">
+                  <%= link_to 'Menu', menus_path%>
+            </button>
+            <button
+                class="bg-green-600	 text-white hover:bg-purple-700 hover:text-white active:bg-purple-700 font-bold uppercase text-xs px-4 py-2 outline-none focus:outline-none mb-1 ease-linear transition-all duration-150"
+                type="button">
+                  <%= link_to 'Reservas', reservations_path%>
+            </button>
+          </div>
+        
+        </div>
+        <% if user_signed_in? %>
+          <div class="block">
+            <div class="ml-4 flex items-center md:ml-6">
+             <div class="text-white font-bold text-xl"><%= current_user.last_name %>,<%= current_user.first_name %></div>
+             <%= link_to "Log out", destroy_user_session_path, :method => :delete , :class => "ml-3 relative bg-blue-600 text-white px-3 py-2 rounded-md font-medium hover:bg-blue-800" %>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </nav> 
+</div>
+
