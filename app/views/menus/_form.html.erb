@@ -22,9 +22,25 @@
   </div>
 
   <div class="field">
+    <%= form.label :launchDessert %>
+    <%= form.text_field :launchDessert %>
+  </div>
+
+  <div class="field">
     <%= form.label :dinner %>
     <%= form.text_field :dinner %>
   </div>
+
+  <div class="field">
+    <%= form.label :dinnerDessert %>
+    <%= form.text_field :dinnerDessert %>
+  </div>
+
+  <div class="field">
+    <%= form.label :date %>
+    <%= form.datetime_select :date %>
+  </div>
+
 
   <div class="actions">
     <%= form.submit %>
