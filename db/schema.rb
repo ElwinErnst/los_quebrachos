@@ -42,6 +42,9 @@ ActiveRecord::Schema.define(version: 2021_10_26_234301) do
   create_table "cabins", force: :cascade do |t|
     t.string "name"
     t.integer "price"
+    t.integer "bed"
+    t.boolean "bathroom"
+    t.boolean "frigobar"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -67,7 +70,10 @@ ActiveRecord::Schema.define(version: 2021_10_26_234301) do
   create_table "menus", force: :cascade do |t|
     t.string "breakfast"
     t.string "launch"
+    t.string "launchDessert"
     t.string "dinner"
+    t.string "dinnerDessert"
+    t.datetime "date"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -78,6 +84,9 @@ ActiveRecord::Schema.define(version: 2021_10_26_234301) do
     t.datetime "end_date"
     t.boolean "pool"
     t.boolean "sport_center"
+    t.boolean "soccerField"
+    t.boolean "BeachVolleyball"
+    t.integer "people"
     t.integer "state_id", null: false
     t.integer "camping_id", null: false
     t.datetime "created_at", precision: 6, null: false
