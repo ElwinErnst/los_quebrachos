@@ -43,6 +43,23 @@
   </div>
 
   <div class="field text-xl">
+    <%= form.label :soccerField %>
+    <%= form.check_box :soccerField %>
+  </div>
+
+  <div class="field text-xl">
+    <%= form.label :BeachVolleyball %>
+    <%= form.check_box :BeachVolleyball %>
+  </div>
+
+ <div class="field text-xl">
+    <%= form.label :people %>
+    <%= form.number_field :people %>
+  </div>
+
+
+
+  <div class="field text-xl">
     <%= form.label :state_id %>
     <div class="flex justify-center p-2 focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-7 pr-12 border-gray-300 rounded-md">
       <%= form.text_field :state_id, :class => 'p-2 focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-7 pr-12 border-gray-300 rounded-md', placeholder:"Ingrese el nombre de la provincia." %>

@@ -64,6 +64,6 @@ class CabinsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def cabin_params
-      params.require(:cabin).permit(:name, :price)
+      params.require(:cabin).permit(:name, :price, :bed, :bathroom, :frigobar)
     end
 end

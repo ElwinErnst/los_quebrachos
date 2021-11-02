@@ -21,6 +21,20 @@
     <%= form.number_field :price %>
   </div>
 
+  <div class="field">
+    <%= form.label :bed %>
+    <%= form.number_field :bed %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bathroom %>
+    <%= form.check_box :bathroom %>
+  </div>
+  <div class="field">
+    <%= form.label :frigobar %>
+    <%= form.check_box :frigobar %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
