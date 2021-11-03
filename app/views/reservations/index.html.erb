@@ -1,63 +1,45 @@
 <p id="notice"><%= notice %></p>
 
-<h1 class="text-3xl">
-  Reservations
-</h1>
+<div class="text-center text-3xl my-3 font-semibold">Reservations</div>
 
 <table class="border-collapse w-full">
   <thead>
     <tr>
-      <th class="p-3 font-bold uppercase bg-gray-200 text-gray-600 border border-gray-300 hidden lg:table-cell" >Nombre de Usuario</th>
-      <th class="p-3 font-bold uppercase bg-gray-200 text-gray-600 border border-gray-300 hidden lg:table-cell">Fecha Inicio</th>
-      <th class="p-3 font-bold uppercase bg-gray-200 text-gray-600 border border-gray-300 hidden lg:table-cell">Fecha Final</th>
-      <th class="p-3 font-bold uppercase bg-gray-200 text-gray-600 border border-gray-300 hidden lg:table-cell"><%= link_to 'cabaña', cabins_path  %></th>
-      <th class="p-3 font-bold uppercase bg-gray-200 text-gray-600 border border-gray-300 hidden lg:table-cell"><%= link_to 'baño', bathrooms_path  %></th>
-      <th class="p-3 font-bold uppercase bg-gray-200 text-gray-600 border border-gray-300 hidden lg:table-cell"><%= link_to 'menu', menus_path  %></th>
-      <th class="p-3 font-bold uppercase bg-gray-200 text-gray-600 border border-gray-300 hidden lg:table-cell"><%= link_to 'salon', rooms_path  %></th>
-      <th class="p-3 font-bold uppercase bg-gray-200 text-gray-600 border border-gray-300 hidden lg:table-cell"><%= link_to 'acampada', campings_path  %></th>
-      <th class="p-3 font-bold uppercase bg-gray-200 text-gray-600 border border-gray-300 hidden lg:table-cell">Centro Deportivo</th>
-      <th class="p-3 font-bold uppercase bg-gray-200 text-gray-600 border border-gray-300 hidden lg:table-cell">Provincia</th>
-      <th class="p-3 font-bold uppercase bg-gray-200 text-gray-600 border border-gray-300 hidden lg:table-cell">Camping</th>
-      <th colspan="3"></th>
+      <th scope="col" class="p-px	 py-3 text-left text-md font-medium text-gray-500 uppercase tracking-wider">Usuario</th>
+      <th scope="col" class="px-6 py-3 text-left text-md font-medium text-gray-500 uppercase tracking-wider">Fecha Inicio</th>
+      <th scope="col" class="px-6 py-3 text-left text-md font-medium text-gray-500 uppercase tracking-wider">Fecha Final</th>
+      <th scope="col" class="px-6 py-3 text-left text-md font-medium text-gray-500 uppercase tracking-wider"><%= link_to 'cabaña', cabins_path  %></th>
+      <th scope="col" class="px-6 py-3 text-left text-md font-medium text-gray-500 uppercase tracking-wider"><%= link_to 'baño', bathrooms_path  %></th>
+      <th scope="col" class="px-6 py-3 text-left text-md font-medium text-gray-500 uppercase tracking-wider"><%= link_to 'menu', menus_path  %></th>
+      <th scope="col" class="px-6 py-3 text-left text-md font-medium text-gray-500 uppercase tracking-wider"><%= link_to 'salon', rooms_path  %></th>
+      <th scope="col" class="px-6 py-3 text-left text-md font-medium text-gray-500 uppercase tracking-wider"><%= link_to 'acampada', campings_path  %></th>
+      <th scope="col" class="px-6 py-3 text-left text-md font-medium text-gray-500 uppercase tracking-wider">Centro Deportivo</th>
+      <th scope="col" class="px-6 py-3 text-left text-md font-medium text-gray-500 uppercase tracking-wider">Estado</th>
+      <th scope="col" class="px-6 py-3 text-left text-md font-medium text-gray-500 uppercase tracking-wider">Camping</th>
+      <th colspan="4"></th>
     </tr>
   </thead>
 
   <tbody>
     <% @reservations.each do |reservation| %>
-      <tr class="bg-white lg:hover:bg-gray-100 flex lg:table-row flex-row lg:flex-row flex-wrap lg:flex-no-wrap mb-10 lg:mb-0"> 
-        <td><%= reservation.user_id %></td>
-        <td><%= reservation.start_date %></td>
-        <td><%= reservation.end_date %></td>
-        <td><%= reservation.pool %></td>
-        <td><%= reservation.sport_center %></td>
-        <td><%= reservation.state_id %></td>
-        <td><%= reservation.camping_id %></td>
+      <tr class="min-w-full divide-y divide-gray-200 border-b border-gray-200"> 
+        <td scope="col" class="px-6 py-3 text-left text-md font-medium text-gray-500 uppercase tracking-wider" ><%= reservation.user_id %></td>
+        <td scope="col" class="px-6 py-3 text-left text-md font-medium text-gray-500 uppercase tracking-wider"><%= reservation.start_date %></td>
+        <td scope="col" class="px-6 py-3 text-left text-md font-medium text-gray-500 uppercase tracking-wider" scope="col" class="px-6 py-3 text-left text-md font-medium text-gray-500 uppercase tracking-wider"><%= reservation.end_date %></td>
+        <td scope="col" class="px-6 py-3 text-left text-md font-medium text-gray-500 uppercase tracking-wider"><%= reservation.pool %></td>
+        <td scope="col" class="px-6 py-3 text-left text-md font-medium text-gray-500 uppercase tracking-wider"><%= reservation.sport_center %></td>
+        <td scope="col" class="px-6 py-3 text-left text-md font-medium text-gray-500 uppercase tracking-wider"><%= reservation.state_id %></td>
+        <td scope="col" class="px-6 py-3 text-left text-md font-medium text-gray-500 uppercase tracking-wider"><%= reservation.camping_id %></td>
 
-        <button type="button" class="mr-3 text-sm bg-yellow-500 hover:bg-yellow-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline"">
-          <%= link_to 'Show', reservation %>
-        </button>
-        <button type="button" class="mr-3 text-sm bg-blue-500 hover:bg-blue-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline"">
-          <%= link_to 'Edit', edit_reservation_path(reservation) %>
-        </button>
-        <button type="button" class="text-sm bg-red-500 hover:bg-red-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline">
-          <%= link_to 'Destroy', reservation, method: :delete, data: { confirm: 'Are you sure?' } %> %>
-        </button>
-        
-  
+        <td class="px-6 py-4 whitespace-nowrap flex flex-row gap-3">
+          <%= link_to '<div>&#x2630;</div>'.html_safe, reservation %>
+          <%= link_to '<div>&#9998; </div>'.html_safe, edit_reservation_path(reservation) %>
+          <%= link_to '<div>&#10008;</div>'.html_safe, reservation, method: :delete, data: { confirm: 'Are you sure?' } %> %>
+        </td>
       </tr>
     <% end %>
   </tbody>
 </table>
-
-<div class="min-h-screen flex justify-center bg-gray-50 py-8 px-4 sm:px-6 lg:px-8">
-
-  <div>
-    <button class=" w-full  py-2 px-4 flex justify-center border border-transparent font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 self-center">  
-      <%= link_to 'Nueva Reserva', new_reservation_path %> 
-    </button>
-    
-  </div>  
-
-</div>
+<%= link_to 'Nueva Reserva', new_reservation_path, :class=> "w-full flex justify-center items-center py-2 px-12 border border-transparent font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" %> 
 
 
