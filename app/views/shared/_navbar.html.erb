@@ -31,15 +31,18 @@
           </div>
         
         </div>
-        <% if user_signed_in? %>
+         <% if user_signed_in? %>
           <div class="block">
             <div class="ml-4 flex items-center md:ml-6">
-             <div class="text-white font-bold text-xl"><%= current_user.last_name %>,<%= current_user.first_name %></div>
+             
+             <%= link_to "Editar Perfil", edit_user_registration_path %>
              <%= link_to "Log out", destroy_user_session_path, :method => :delete , :class => "ml-3 relative bg-blue-600 text-white px-3 py-2 rounded-md font-medium hover:bg-blue-800" %>
             </div>
           </div>
-        <% end %>
-      </div>
+          <% else %>
+  	        <%= link_to "Iniciar Sesión", new_user_session_url %>
+         <% end %>
+        </div>
     </div>
   </nav> 
 </div>
