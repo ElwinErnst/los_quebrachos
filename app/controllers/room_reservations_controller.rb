@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class RoomReservationsController < ApplicationController
-  before_action :set_room_reservation, only: %i[ show edit update destroy ]
+  before_action :set_room_reservation, only: %i[show edit update destroy]
 
   # GET /room_reservations or /room_reservations.json
   def index
@@ -7,8 +9,7 @@ class RoomReservationsController < ApplicationController
   end
 
   # GET /room_reservations/1 or /room_reservations/1.json
-  def show
-  end
+  def show; end
 
   # GET /room_reservations/new
   def new
@@ -16,8 +17,7 @@ class RoomReservationsController < ApplicationController
   end
 
   # GET /room_reservations/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /room_reservations or /room_reservations.json
   def create
@@ -25,7 +25,7 @@ class RoomReservationsController < ApplicationController
 
     respond_to do |format|
       if @room_reservation.save
-        format.html { redirect_to @room_reservation, notice: "Room reservation was successfully created." }
+        format.html { redirect_to @room_reservation, notice: 'Room reservation was successfully created.' }
         format.json { render :show, status: :created, location: @room_reservation }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class RoomReservationsController < ApplicationController
   def update
     respond_to do |format|
       if @room_reservation.update(room_reservation_params)
-        format.html { redirect_to @room_reservation, notice: "Room reservation was successfully updated." }
+        format.html { redirect_to @room_reservation, notice: 'Room reservation was successfully updated.' }
         format.json { render :show, status: :ok, location: @room_reservation }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -51,19 +51,20 @@ class RoomReservationsController < ApplicationController
   def destroy
     @room_reservation.destroy
     respond_to do |format|
-      format.html { redirect_to room_reservations_url, notice: "Room reservation was successfully destroyed." }
+      format.html { redirect_to room_reservations_url, notice: 'Room reservation was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_room_reservation
-      @room_reservation = RoomReservation.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def room_reservation_params
-      params.require(:room_reservation).permit(:reservation_id, :room_id, :date)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_room_reservation
+    @room_reservation = RoomReservation.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def room_reservation_params
+    params.require(:room_reservation).permit(:reservation_id, :room_id, :date)
+  end
 end

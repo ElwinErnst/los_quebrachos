@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class CabinReservationsController < ApplicationController
-  before_action :set_cabin_reservation, only: %i[ show edit update destroy ]
+  before_action :set_cabin_reservation, only: %i[show edit update destroy]
 
   # GET /cabin_reservations or /cabin_reservations.json
   def index
@@ -7,8 +9,7 @@ class CabinReservationsController < ApplicationController
   end
 
   # GET /cabin_reservations/1 or /cabin_reservations/1.json
-  def show
-  end
+  def show; end
 
   # GET /cabin_reservations/new
   def new
@@ -16,8 +17,7 @@ class CabinReservationsController < ApplicationController
   end
 
   # GET /cabin_reservations/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /cabin_reservations or /cabin_reservations.json
   def create
@@ -25,7 +25,7 @@ class CabinReservationsController < ApplicationController
 
     respond_to do |format|
       if @cabin_reservation.save
-        format.html { redirect_to @cabin_reservation, notice: "Cabin reservation was successfully created." }
+        format.html { redirect_to @cabin_reservation, notice: 'Cabin reservation was successfully created.' }
         format.json { render :show, status: :created, location: @cabin_reservation }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class CabinReservationsController < ApplicationController
   def update
     respond_to do |format|
       if @cabin_reservation.update(cabin_reservation_params)
-        format.html { redirect_to @cabin_reservation, notice: "Cabin reservation was successfully updated." }
+        format.html { redirect_to @cabin_reservation, notice: 'Cabin reservation was successfully updated.' }
         format.json { render :show, status: :ok, location: @cabin_reservation }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -51,19 +51,20 @@ class CabinReservationsController < ApplicationController
   def destroy
     @cabin_reservation.destroy
     respond_to do |format|
-      format.html { redirect_to cabin_reservations_url, notice: "Cabin reservation was successfully destroyed." }
+      format.html { redirect_to cabin_reservations_url, notice: 'Cabin reservation was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_cabin_reservation
-      @cabin_reservation = CabinReservation.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def cabin_reservation_params
-      params.require(:cabin_reservation).permit(:reservation_id, :cabin_id, :date)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_cabin_reservation
+    @cabin_reservation = CabinReservation.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def cabin_reservation_params
+    params.require(:cabin_reservation).permit(:reservation_id, :cabin_id, :date)
+  end
 end

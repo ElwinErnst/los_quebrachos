@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CreateCabins < ActiveRecord::Migration[6.1]
   def change
     create_table :cabins do |t|
@@ -5,7 +7,7 @@ class CreateCabins < ActiveRecord::Migration[6.1]
       t.integer :price
       t.integer :bed
       t.boolean :bathroom # falso = baño compartido // true = baño privado
-      t.boolean :frigobar 
+      t.boolean :frigobar
 
       t.timestamps
     end

@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class MenuReservationsController < ApplicationController
-  before_action :set_menu_reservation, only: %i[ show edit update destroy ]
+  before_action :set_menu_reservation, only: %i[show edit update destroy]
 
   # GET /menu_reservations or /menu_reservations.json
   def index
@@ -7,8 +9,7 @@ class MenuReservationsController < ApplicationController
   end
 
   # GET /menu_reservations/1 or /menu_reservations/1.json
-  def show
-  end
+  def show; end
 
   # GET /menu_reservations/new
   def new
@@ -16,8 +17,7 @@ class MenuReservationsController < ApplicationController
   end
 
   # GET /menu_reservations/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /menu_reservations or /menu_reservations.json
   def create
@@ -25,7 +25,7 @@ class MenuReservationsController < ApplicationController
 
     respond_to do |format|
       if @menu_reservation.save
-        format.html { redirect_to @menu_reservation, notice: "Menu reservation was successfully created." }
+        format.html { redirect_to @menu_reservation, notice: 'Menu reservation was successfully created.' }
         format.json { render :show, status: :created, location: @menu_reservation }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class MenuReservationsController < ApplicationController
   def update
     respond_to do |format|
       if @menu_reservation.update(menu_reservation_params)
-        format.html { redirect_to @menu_reservation, notice: "Menu reservation was successfully updated." }
+        format.html { redirect_to @menu_reservation, notice: 'Menu reservation was successfully updated.' }
         format.json { render :show, status: :ok, location: @menu_reservation }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -51,19 +51,20 @@ class MenuReservationsController < ApplicationController
   def destroy
     @menu_reservation.destroy
     respond_to do |format|
-      format.html { redirect_to menu_reservations_url, notice: "Menu reservation was successfully destroyed." }
+      format.html { redirect_to menu_reservations_url, notice: 'Menu reservation was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_menu_reservation
-      @menu_reservation = MenuReservation.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def menu_reservation_params
-      params.require(:menu_reservation).permit(:reservation_id, :menu_id, :date)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_menu_reservation
+    @menu_reservation = MenuReservation.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def menu_reservation_params
+    params.require(:menu_reservation).permit(:reservation_id, :menu_id, :date)
+  end
 end

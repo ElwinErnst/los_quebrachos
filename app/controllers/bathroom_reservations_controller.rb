@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class BathroomReservationsController < ApplicationController
-  before_action :set_bathroom_reservation, only: %i[ show edit update destroy ]
+  before_action :set_bathroom_reservation, only: %i[show edit update destroy]
 
   # GET /bathroom_reservations or /bathroom_reservations.json
   def index
@@ -7,8 +9,7 @@ class BathroomReservationsController < ApplicationController
   end
 
   # GET /bathroom_reservations/1 or /bathroom_reservations/1.json
-  def show
-  end
+  def show; end
 
   # GET /bathroom_reservations/new
   def new
@@ -16,8 +17,7 @@ class BathroomReservationsController < ApplicationController
   end
 
   # GET /bathroom_reservations/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /bathroom_reservations or /bathroom_reservations.json
   def create
@@ -25,7 +25,7 @@ class BathroomReservationsController < ApplicationController
 
     respond_to do |format|
       if @bathroom_reservation.save
-        format.html { redirect_to @bathroom_reservation, notice: "Bathroom reservation was successfully created." }
+        format.html { redirect_to @bathroom_reservation, notice: 'Bathroom reservation was successfully created.' }
         format.json { render :show, status: :created, location: @bathroom_reservation }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class BathroomReservationsController < ApplicationController
   def update
     respond_to do |format|
       if @bathroom_reservation.update(bathroom_reservation_params)
-        format.html { redirect_to @bathroom_reservation, notice: "Bathroom reservation was successfully updated." }
+        format.html { redirect_to @bathroom_reservation, notice: 'Bathroom reservation was successfully updated.' }
         format.json { render :show, status: :ok, location: @bathroom_reservation }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -51,19 +51,20 @@ class BathroomReservationsController < ApplicationController
   def destroy
     @bathroom_reservation.destroy
     respond_to do |format|
-      format.html { redirect_to bathroom_reservations_url, notice: "Bathroom reservation was successfully destroyed." }
+      format.html { redirect_to bathroom_reservations_url, notice: 'Bathroom reservation was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_bathroom_reservation
-      @bathroom_reservation = BathroomReservation.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def bathroom_reservation_params
-      params.require(:bathroom_reservation).permit(:reservation_id, :bathroom_id)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_bathroom_reservation
+    @bathroom_reservation = BathroomReservation.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def bathroom_reservation_params
+    params.require(:bathroom_reservation).permit(:reservation_id, :bathroom_id)
+  end
 end

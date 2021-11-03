@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CreateCabinReservations < ActiveRecord::Migration[6.1]
   def change
     create_table :cabin_reservations do |t|

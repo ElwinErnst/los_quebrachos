@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class CampingsController < ApplicationController
-  before_action :set_camping, only: %i[ show edit update destroy ]
+  before_action :set_camping, only: %i[show edit update destroy]
 
   # GET /campings or /campings.json
   def index
@@ -7,8 +9,7 @@ class CampingsController < ApplicationController
   end
 
   # GET /campings/1 or /campings/1.json
-  def show
-  end
+  def show; end
 
   # GET /campings/new
   def new
@@ -16,8 +17,7 @@ class CampingsController < ApplicationController
   end
 
   # GET /campings/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /campings or /campings.json
   def create
@@ -25,7 +25,7 @@ class CampingsController < ApplicationController
 
     respond_to do |format|
       if @camping.save
-        format.html { redirect_to @camping, notice: "Camping was successfully created." }
+        format.html { redirect_to @camping, notice: 'Camping was successfully created.' }
         format.json { render :show, status: :created, location: @camping }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class CampingsController < ApplicationController
   def update
     respond_to do |format|
       if @camping.update(camping_params)
-        format.html { redirect_to @camping, notice: "Camping was successfully updated." }
+        format.html { redirect_to @camping, notice: 'Camping was successfully updated.' }
         format.json { render :show, status: :ok, location: @camping }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -51,19 +51,20 @@ class CampingsController < ApplicationController
   def destroy
     @camping.destroy
     respond_to do |format|
-      format.html { redirect_to campings_url, notice: "Camping was successfully destroyed." }
+      format.html { redirect_to campings_url, notice: 'Camping was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_camping
-      @camping = Camping.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def camping_params
-      params.require(:camping).permit(:ubication, :area, :tents)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_camping
+    @camping = Camping.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def camping_params
+    params.require(:camping).permit(:ubication, :area, :tents)
+  end
 end

@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class BathroomsController < ApplicationController
-  before_action :set_bathroom, only: %i[ show edit update destroy ]
+  before_action :set_bathroom, only: %i[show edit update destroy]
 
   # GET /bathrooms or /bathrooms.json
   def index
@@ -7,8 +9,7 @@ class BathroomsController < ApplicationController
   end
 
   # GET /bathrooms/1 or /bathrooms/1.json
-  def show
-  end
+  def show; end
 
   # GET /bathrooms/new
   def new
@@ -16,8 +17,7 @@ class BathroomsController < ApplicationController
   end
 
   # GET /bathrooms/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /bathrooms or /bathrooms.json
   def create
@@ -25,7 +25,7 @@ class BathroomsController < ApplicationController
 
     respond_to do |format|
       if @bathroom.save
-        format.html { redirect_to @bathroom, notice: "Bathroom was successfully created." }
+        format.html { redirect_to @bathroom, notice: 'Bathroom was successfully created.' }
         format.json { render :show, status: :created, location: @bathroom }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class BathroomsController < ApplicationController
   def update
     respond_to do |format|
       if @bathroom.update(bathroom_params)
-        format.html { redirect_to @bathroom, notice: "Bathroom was successfully updated." }
+        format.html { redirect_to @bathroom, notice: 'Bathroom was successfully updated.' }
         format.json { render :show, status: :ok, location: @bathroom }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -51,19 +51,20 @@ class BathroomsController < ApplicationController
   def destroy
     @bathroom.destroy
     respond_to do |format|
-      format.html { redirect_to bathrooms_url, notice: "Bathroom was successfully destroyed." }
+      format.html { redirect_to bathrooms_url, notice: 'Bathroom was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_bathroom
-      @bathroom = Bathroom.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def bathroom_params
-      params.require(:bathroom).permit(:ubication, :shower, :gender)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_bathroom
+    @bathroom = Bathroom.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def bathroom_params
+    params.require(:bathroom).permit(:ubication, :shower, :gender)
+  end
 end
