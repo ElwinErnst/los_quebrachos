@@ -80,7 +80,7 @@ ActiveRecord::Schema.define(version: 20_211_026_234_301) do
   end
 
   create_table 'reservations', force: :cascade do |t|
-    t.integer 'user_id', null: false
+    t.integer 'user_id' #, null: false
     t.datetime 'start_date'
     t.datetime 'end_date'
     t.boolean 'pool'
