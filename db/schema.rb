@@ -78,6 +78,7 @@ ActiveRecord::Schema.define(version: 2021_10_26_234301) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+<<<<<<< HEAD
   create_table "reservations", force: :cascade do |t|
     t.integer "user_id", null: false
     t.datetime "start_date"
@@ -94,6 +95,24 @@ ActiveRecord::Schema.define(version: 2021_10_26_234301) do
     t.index ["camping_id"], name: "index_reservations_on_camping_id"
     t.index ["state_id"], name: "index_reservations_on_state_id"
     t.index ["user_id"], name: "index_reservations_on_user_id"
+=======
+  create_table 'reservations', force: :cascade do |t|
+    t.integer 'user_id' #, null: false
+    t.datetime 'start_date'
+    t.datetime 'end_date'
+    t.boolean 'pool'
+    t.boolean 'sport_center'
+    t.boolean 'soccerField'
+    t.boolean 'BeachVolleyball'
+    t.integer 'people'
+    t.integer 'state_id', null: false
+    t.integer 'camping_id', null: false
+    t.datetime 'created_at', precision: 6, null: false
+    t.datetime 'updated_at', precision: 6, null: false
+    t.index ['camping_id'], name: 'index_reservations_on_camping_id'
+    t.index ['state_id'], name: 'index_reservations_on_state_id'
+    t.index ['user_id'], name: 'index_reservations_on_user_id'
+>>>>>>> c3463215c2b47ee1cbc5535a7f6c1fde24b71abd
   end
 
   create_table "room_reservations", force: :cascade do |t|
