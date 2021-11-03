@@ -21,4 +21,6 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+* run:  gem install mailcatcher * Una vez instalado, inicie el servidor mailcatcher con el comando:  mailcatcher
+
+
