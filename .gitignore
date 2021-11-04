@@ -5,8 +5,8 @@
 #   git config --global core.excludesfile '~/.gitignore_global'
 
 # Ignore gemfile
-/gemfile
-/gemfile.lock
+#/Gemfile
+/Gemfile.lock
 # Ignore bundler config.
 /.bundle
 

@@ -17,25 +17,10 @@
 
     <div class="field text-xl">
       <%= form.label :user_id %>
-      <%= form.text_field :user_id, class: "appearance-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:", placeholder: "Nombre Usuario" %>
+      <%= form.text_field :user_id, class: "p-2 focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-7 pr-12 border-gray-300 rounded-md", placeholder: "Nombre Usuario" %>
     </div>
 
-
-  <div class="field text-xl", style="max-width: 400px">
-      <%= form.label :people %>
-      <%= form.number_field :people, class: "appearance-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:", placeholder: "Ingrese cantidad de personas"  %>
-    </div>
-
-
-
-    <div class="field text-xl">
-      <%= form.label :state_id %>
-      <div>
-        <%= form.text_field :state_id, :class => 'appearance-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:', placeholder:"Ingrese el estado de la reserva." %>
-      </div>
-    </div>
-
-  <div class="field text-xl ", style="max-width: 400px">
+    <div class="field text-xl ", style="max-width: 400px">
       <%= form.label  :start_date, class:"flex w-full" %>
       <div class="flex justify-between p-2 focus:ring-indigo-500 focus:border-indigo-500 w-full pl-7 pr-12 border-gray-300 rounded-md:">
         <%= form.date_select :start_date, :class => "appearance-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:" %>
@@ -49,28 +34,39 @@
       </div>
     </div>
 
-
-    <div class="field text-xl flex justify-center	">
+    <div class="field text-xl">
       <%= form.label :pool, class: "flex w-full" %>
       <%= form.check_box :pool, :class => 'm-1 justify-center	' %>
     </div>
 
-    <div class="field text-xl flex justify-center">
+    <div class="field text-xl">
       <%= form.label :sport_center, class: "flex w-full" %>
       <%= form.check_box :sport_center, :class => 'm-1' %>
     </div>
 
-    <div class="field text-xl flex justify-center">
+    <div class="field text-xl">
       <%= form.label :soccerField, class: "flex w-full"  %>
       <%= form.check_box :soccerField, :class => 'm-1' %>
     </div>
 
-    <div class="field text-xl flex justify-center">
+    <div class="field text-xl">
       <%= form.label :BeachVolleyball, class: "flex w-full" %>
       <%= form.check_box :BeachVolleyball, :class => 'm-1' %>
     </div>
 
-  
+  <div class="field text-xl", style="max-width: 400px">
+      <%= form.label :people %>
+      <%= form.number_field :people %>
+    </div>
+
+
+
+    <div class="field text-xl">
+      <%= form.label :state_id %>
+      <div>
+        <%= form.number_field :state_id, :class => 'appearance-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:', placeholder:"Ingrese el estado de la reserva." %>
+      </div>
+    </div>
 
 
 
