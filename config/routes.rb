@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  resources :previews
   resources :reservations
   resources :cabin_reservations
   resources :room_reservations

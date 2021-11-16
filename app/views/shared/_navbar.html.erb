@@ -24,9 +24,7 @@
                 class="ml-3 relative bg-gray-800 text-white px-3 py-2 rounded-md font-medium hover:bg-gray-900 focus:bg-gray-700" type="button">
                     <%= link_to 'Reservas', reservations_path%>
               </button>
-            </div>
-        
-            </div>
+            
             <% if user_signed_in? %>
             <div class="block">
               <div class="ml-4 flex items-center md:ml-6">
@@ -36,8 +34,14 @@
               </div>
             </div>
             <% else %>
-              <%= link_to "Iniciar Sesión", new_user_session_url %>
+              <%= link_to "Iniciar Sesión", new_user_session_url, :class => "ml-3 relative bg-gray-800 text-white px-3 py-2 rounded-md font-medium hover:bg-gray-900 focus:bg-gray-700" %>
             <% end %>
+            <button
+                class="ml-3 relative bg-gray-800 text-white px-3 py-2 rounded-md font-medium hover:bg-gray-900 focus:bg-gray-700" type="button">
+                  <%= link_to 'Previews', previews_path%>
+            </button>
+            <div>
+            </div>
         </div>
     </div>
   </nav> 
