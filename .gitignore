@@ -6,7 +6,7 @@
 
 # Ignore gemfile
 #/Gemfile
-/Gemfile.lock
+#/Gemfile.lock
 # Ignore bundler config.
 /.bundle
 
