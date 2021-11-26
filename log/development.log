@@ -2542,3 +2542,789 @@ Processing by PreviewsController#index as HTML
 Completed 200 OK in 57ms (Views: 54.9ms | ActiveRecord: 0.2ms | Allocations: 8148)
 
 
+Started GET "/" for 127.0.0.1 at 2021-11-22 12:04:18 -0300
+  [1m[35m (8.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CabinReservationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cabin_reservations/index.html.erb within layouts/application
+  [1m[36mCabinReservation Load (0.2ms)[0m  [1m[34mSELECT "cabin_reservations".* FROM "cabin_reservations"[0m
+  ↳ app/views/cabin_reservations/index.html.erb:16
+  Rendered cabin_reservations/index.html.erb within layouts/application (Duration: 30.2ms | Allocations: 12115)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in D:/Users/Ian Hein/GitHub/los_quebrachos/public/packs
+[Webpacker] Hash: f3dc35d4d7a5663ae20b
+Version: webpack 4.46.0
+Time: 2203ms
+Built at: 22/11/2021 12:04:24
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-c65ca5da76f0bd868a1f.js    125 KiB  application  [emitted] [immutable]  application
+js/application-c65ca5da76f0bd868a1f.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-c65ca5da76f0bd868a1f.js js/application-c65ca5da76f0bd868a1f.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered shared/_navbar.html.erb (Duration: 2.7ms | Allocations: 872)
+  Rendered shared/_footer.html.erb (Duration: 0.7ms | Allocations: 220)
+  Rendered layout layouts/application.html.erb (Duration: 5889.5ms | Allocations: 424814)
+Completed 200 OK in 5967ms (Views: 5913.1ms | ActiveRecord: 0.2ms | Allocations: 439326)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-11-22 12:04:39 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 55.4ms | Allocations: 22586)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 263.6ms | Allocations: 29650)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 274)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 298.4ms | Allocations: 33831)
+Completed 200 OK in 333ms (Views: 309.3ms | ActiveRecord: 0.8ms | Allocations: 43446)
+
+
+Started GET "/previews" for 127.0.0.1 at 2021-11-22 12:04:41 -0300
+Processing by PreviewsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering previews/index.html.erb within layouts/application
+  [1m[36mPreview Load (0.3ms)[0m  [1m[34mSELECT "previews".* FROM "previews"[0m
+  ↳ app/views/previews/index.html.erb:72
+  Rendered collection of templates [0 times] (Duration: 0.0ms | Allocations: 34)
+  Rendered previews/index.html.erb within layouts/application (Duration: 15.4ms | Allocations: 1922)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 310)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 47.0ms | Allocations: 6127)
+Completed 200 OK in 63ms (Views: 52.7ms | ActiveRecord: 0.3ms | Allocations: 8134)
+
+
+Started GET "/previews" for 127.0.0.1 at 2021-11-22 12:04:46 -0300
+Processing by PreviewsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering previews/index.html.erb within layouts/application
+  [1m[36mPreview Load (0.2ms)[0m  [1m[34mSELECT "previews".* FROM "previews"[0m
+  ↳ app/views/previews/index.html.erb:72
+  Rendered collection of templates [0 times] (Duration: 0.0ms | Allocations: 11)
+  Rendered previews/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 901)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 248)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 36.1ms | Allocations: 5546)
+Completed 200 OK in 38ms (Views: 37.0ms | ActiveRecord: 0.2ms | Allocations: 6182)
+
+
+Started GET "/previews" for 127.0.0.1 at 2021-11-22 12:04:47 -0300
+Processing by PreviewsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering previews/index.html.erb within layouts/application
+  [1m[36mPreview Load (0.2ms)[0m  [1m[34mSELECT "previews".* FROM "previews"[0m
+  ↳ app/views/previews/index.html.erb:72
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 11)
+  Rendered previews/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 882)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 248)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 36.4ms | Allocations: 4856)
+Completed 200 OK in 38ms (Views: 37.7ms | ActiveRecord: 0.2ms | Allocations: 5389)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-11-22 12:04:48 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 239)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1317)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 225)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 43.7ms | Allocations: 9457)
+Completed 200 OK in 48ms (Views: 46.7ms | ActiveRecord: 0.0ms | Allocations: 10257)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2021-11-22 12:04:48 -0300
+Processing by ReservationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering reservations/index.html.erb within layouts/application
+  [1m[36mReservation Load (0.3ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations"[0m
+  ↳ app/views/reservations/index.html.erb:26
+  Rendered reservations/index.html.erb within layouts/application (Duration: 23.9ms | Allocations: 1739)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 302)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 56.5ms | Allocations: 6512)
+Completed 200 OK in 79ms (Views: 61.9ms | ActiveRecord: 0.3ms | Allocations: 13821)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2021-11-22 12:04:51 -0300
+Processing by ReservationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering reservations/index.html.erb within layouts/application
+  [1m[36mReservation Load (0.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations"[0m
+  ↳ app/views/reservations/index.html.erb:26
+  Rendered reservations/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1118)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 248)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 34.7ms | Allocations: 7334)
+Completed 200 OK in 37ms (Views: 35.6ms | ActiveRecord: 0.2ms | Allocations: 8149)
+
+
+Started GET "/campings" for 127.0.0.1 at 2021-11-22 12:04:54 -0300
+Processing by CampingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering campings/index.html.erb within layouts/application
+  [1m[36mCamping Load (0.3ms)[0m  [1m[34mSELECT "campings".* FROM "campings"[0m
+  ↳ app/views/campings/index.html.erb:18
+  Rendered campings/index.html.erb within layouts/application (Duration: 15.7ms | Allocations: 1413)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 306)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 50.0ms | Allocations: 5605)
+Completed 200 OK in 62ms (Views: 55.2ms | ActiveRecord: 0.3ms | Allocations: 8063)
+
+
+Started GET "/menus" for 127.0.0.1 at 2021-11-22 12:04:54 -0300
+Processing by MenusController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering menus/index.html.erb within layouts/application
+  [1m[36mMenu Load (0.2ms)[0m  [1m[34mSELECT "menus".* FROM "menus"[0m
+  ↳ app/views/menus/index.html.erb:18
+  Rendered menus/index.html.erb within layouts/application (Duration: 14.6ms | Allocations: 1421)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 305)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 45.5ms | Allocations: 5609)
+Completed 200 OK in 57ms (Views: 50.5ms | ActiveRecord: 0.2ms | Allocations: 8594)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2021-11-22 12:04:55 -0300
+Processing by ReservationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering reservations/index.html.erb within layouts/application
+  [1m[36mReservation Load (0.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations"[0m
+  ↳ app/views/reservations/index.html.erb:26
+  Rendered reservations/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 916)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 248)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 37.4ms | Allocations: 5479)
+Completed 200 OK in 43ms (Views: 41.3ms | ActiveRecord: 0.2ms | Allocations: 6137)
+
+
+Started GET "/cabins" for 127.0.0.1 at 2021-11-22 12:04:56 -0300
+Processing by CabinsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cabins/index.html.erb within layouts/application
+  [1m[36mCabin Load (0.2ms)[0m  [1m[34mSELECT "cabins".* FROM "cabins"[0m
+  ↳ app/views/cabins/index.html.erb:17
+  Rendered cabins/index.html.erb within layouts/application (Duration: 16.3ms | Allocations: 1391)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.7ms | Allocations: 305)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 50.6ms | Allocations: 5581)
+Completed 200 OK in 75ms (Views: 56.1ms | ActiveRecord: 0.2ms | Allocations: 9186)
+
+
+Started GET "/campings" for 127.0.0.1 at 2021-11-22 12:04:57 -0300
+Processing by CampingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering campings/index.html.erb within layouts/application
+  [1m[36mCamping Load (0.2ms)[0m  [1m[34mSELECT "campings".* FROM "campings"[0m
+  ↳ app/views/campings/index.html.erb:18
+  Rendered campings/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 781)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 248)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 36.0ms | Allocations: 5414)
+Completed 200 OK in 43ms (Views: 37.7ms | ActiveRecord: 0.2ms | Allocations: 6002)
+
+
+Started GET "/previews" for 127.0.0.1 at 2021-11-22 12:08:25 -0300
+Processing by PreviewsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering previews/index.html.erb within layouts/application
+  [1m[36mPreview Load (0.2ms)[0m  [1m[34mSELECT "previews".* FROM "previews"[0m
+  ↳ app/views/previews/index.html.erb:75
+  Rendered collection of templates [0 times] (Duration: 0.0ms | Allocations: 15)
+  Rendered previews/index.html.erb within layouts/application (Duration: 16.8ms | Allocations: 1557)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in D:/Users/Ian Hein/GitHub/los_quebrachos/public/packs
+[Webpacker] Hash: f3dc35d4d7a5663ae20b
+Version: webpack 4.46.0
+Time: 1010ms
+Built at: 22/11/2021 12:08:29
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-c65ca5da76f0bd868a1f.js    125 KiB  application  [emitted] [immutable]  application
+js/application-c65ca5da76f0bd868a1f.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-c65ca5da76f0bd868a1f.js js/application-c65ca5da76f0bd868a1f.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered shared/_navbar.html.erb (Duration: 1.3ms | Allocations: 712)
+  Rendered shared/_footer.html.erb (Duration: 0.7ms | Allocations: 215)
+  Rendered layout layouts/application.html.erb (Duration: 4362.9ms | Allocations: 318275)
+Completed 200 OK in 4377ms (Views: 4372.8ms | ActiveRecord: 0.2ms | Allocations: 320465)
+
+
+Started GET "/previews" for 127.0.0.1 at 2021-11-22 12:08:29 -0300
+Processing by PreviewsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering previews/index.html.erb within layouts/application
+  [1m[36mPreview Load (0.2ms)[0m  [1m[34mSELECT "previews".* FROM "previews"[0m
+  ↳ app/views/previews/index.html.erb:75
+  Rendered collection of templates [0 times] (Duration: 0.0ms | Allocations: 11)
+  Rendered previews/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 887)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 248)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 45.4ms | Allocations: 7215)
+Completed 200 OK in 47ms (Views: 46.2ms | ActiveRecord: 0.2ms | Allocations: 7817)
+
+
+Started GET "/previews" for 127.0.0.1 at 2021-11-22 12:09:27 -0300
+Processing by PreviewsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering previews/index.html.erb within layouts/application
+  [1m[36mPreview Load (0.2ms)[0m  [1m[34mSELECT "previews".* FROM "previews"[0m
+  ↳ app/views/previews/index.html.erb:75
+  Rendered collection of templates [0 times] (Duration: 0.0ms | Allocations: 11)
+  Rendered previews/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 895)
+[Webpacker] Compiling...
+Started GET "/previews" for 127.0.0.1 at 2021-11-22 12:09:27 -0300
+Processing by PreviewsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering previews/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/previews/index.html.erb:75
+  [1m[36mPreview Load (0.2ms)[0m  [1m[34mSELECT "previews".* FROM "previews"[0m
+  ↳ app/views/previews/index.html.erb:75
+  Rendered collection of templates [0 times] (Duration: 0.0ms | Allocations: 11)
+  Rendered previews/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 1720)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in D:/Users/Ian Hein/GitHub/los_quebrachos/public/packs
+[Webpacker] Hash: f3dc35d4d7a5663ae20b
+Version: webpack 4.46.0
+Time: 1087ms
+Built at: 22/11/2021 12:09:31
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-c65ca5da76f0bd868a1f.js    125 KiB  application  [emitted] [immutable]  application
+js/application-c65ca5da76f0bd868a1f.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-c65ca5da76f0bd868a1f.js js/application-c65ca5da76f0bd868a1f.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered shared/_navbar.html.erb (Duration: 1.2ms | Allocations: 249)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 4453.5ms | Allocations: 329434)
+Completed 200 OK in 4456ms (Views: 4454.8ms | ActiveRecord: 0.2ms | Allocations: 329999)
+
+
+[Webpacker] Compiled all packs in D:/Users/Ian Hein/GitHub/los_quebrachos/public/packs
+[Webpacker] Hash: f3dc35d4d7a5663ae20b
+Version: webpack 4.46.0
+Time: 1130ms
+Built at: 22/11/2021 12:09:32
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-c65ca5da76f0bd868a1f.js    125 KiB  application  [emitted] [immutable]  application
+js/application-c65ca5da76f0bd868a1f.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-c65ca5da76f0bd868a1f.js js/application-c65ca5da76f0bd868a1f.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 248)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 4420.7ms | Allocations: 277359)
+Completed 200 OK in 4423ms (Views: 4420.8ms | ActiveRecord: 1.0ms | Allocations: 277909)
+
+
+Started GET "/previews" for 127.0.0.1 at 2021-11-22 12:09:33 -0300
+Processing by PreviewsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering previews/index.html.erb within layouts/application
+  [1m[36mPreview Load (0.2ms)[0m  [1m[34mSELECT "previews".* FROM "previews"[0m
+  ↳ app/views/previews/index.html.erb:75
+  Rendered collection of templates [0 times] (Duration: 0.0ms | Allocations: 11)
+  Rendered previews/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 895)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 248)
+  Rendered shared/_footer.html.erb (Duration: 0.6ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 35.7ms | Allocations: 5047)
+Completed 200 OK in 38ms (Views: 37.3ms | ActiveRecord: 0.2ms | Allocations: 6065)
+
+
+Started GET "/previews" for 127.0.0.1 at 2021-11-22 12:09:34 -0300
+Processing by PreviewsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering previews/index.html.erb within layouts/application
+  [1m[36mPreview Load (0.2ms)[0m  [1m[34mSELECT "previews".* FROM "previews"[0m
+  ↳ app/views/previews/index.html.erb:75
+  Rendered collection of templates [0 times] (Duration: 0.0ms | Allocations: 11)
+  Rendered previews/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 248)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 34.5ms | Allocations: 4876)
+Completed 200 OK in 36ms (Views: 35.4ms | ActiveRecord: 0.2ms | Allocations: 5432)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2021-11-22 12:09:35 -0300
+Processing by ReservationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering reservations/index.html.erb within layouts/application
+  [1m[36mReservation Load (0.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations"[0m
+  ↳ app/views/reservations/index.html.erb:26
+  Rendered reservations/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1662)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 301)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 39.6ms | Allocations: 5991)
+Completed 200 OK in 48ms (Views: 45.3ms | ActiveRecord: 0.2ms | Allocations: 7831)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-11-22 12:09:35 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 23.9ms | Allocations: 16828)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 29.1ms | Allocations: 19116)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 275)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 64.7ms | Allocations: 24765)
+Completed 200 OK in 75ms (Views: 74.1ms | ActiveRecord: 0.0ms | Allocations: 27513)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-11-22 12:09:36 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 238)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1189)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 225)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 32.2ms | Allocations: 5230)
+Completed 200 OK in 34ms (Views: 33.2ms | ActiveRecord: 0.0ms | Allocations: 6106)
+
+
+Started GET "/previews" for 127.0.0.1 at 2021-11-22 12:09:37 -0300
+Processing by PreviewsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering previews/index.html.erb within layouts/application
+  [1m[36mPreview Load (1.7ms)[0m  [1m[34mSELECT "previews".* FROM "previews"[0m
+  ↳ app/views/previews/index.html.erb:75
+  Rendered collection of templates [0 times] (Duration: 0.0ms | Allocations: 15)
+  Rendered previews/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 979)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.6ms | Allocations: 248)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 41.1ms | Allocations: 5611)
+Completed 200 OK in 44ms (Views: 41.1ms | ActiveRecord: 1.7ms | Allocations: 6150)
+
+
+Started GET "/previews" for 127.0.0.1 at 2021-11-22 12:09:37 -0300
+Processing by PreviewsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering previews/index.html.erb within layouts/application
+  [1m[36mPreview Load (0.3ms)[0m  [1m[34mSELECT "previews".* FROM "previews"[0m
+  ↳ app/views/previews/index.html.erb:75
+  Rendered collection of templates [0 times] (Duration: 0.0ms | Allocations: 11)
+  Rendered previews/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 887)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 248)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 40.8ms | Allocations: 7149)
+Completed 200 OK in 43ms (Views: 41.8ms | ActiveRecord: 0.3ms | Allocations: 7731)
+
+
+Started GET "/previews" for 127.0.0.1 at 2021-11-22 12:09:47 -0300
+Processing by PreviewsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering previews/index.html.erb within layouts/application
+  [1m[36mPreview Load (0.2ms)[0m  [1m[34mSELECT "previews".* FROM "previews"[0m
+  ↳ app/views/previews/index.html.erb:75
+  Rendered collection of templates [0 times] (Duration: 0.0ms | Allocations: 11)
+  Rendered previews/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 888)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in D:/Users/Ian Hein/GitHub/los_quebrachos/public/packs
+[Webpacker] Hash: f3dc35d4d7a5663ae20b
+Version: webpack 4.46.0
+Time: 1084ms
+Built at: 22/11/2021 12:09:52
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-c65ca5da76f0bd868a1f.js    125 KiB  application  [emitted] [immutable]  application
+js/application-c65ca5da76f0bd868a1f.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-c65ca5da76f0bd868a1f.js js/application-c65ca5da76f0bd868a1f.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 249)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 4498.3ms | Allocations: 276455)
+Completed 200 OK in 4501ms (Views: 4499.6ms | ActiveRecord: 0.2ms | Allocations: 277007)
+
+
+Started GET "/campings" for 127.0.0.1 at 2021-11-22 12:09:54 -0300
+Processing by CampingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering campings/index.html.erb within layouts/application
+  [1m[36mCamping Load (0.2ms)[0m  [1m[34mSELECT "campings".* FROM "campings"[0m
+  ↳ app/views/campings/index.html.erb:18
+  Rendered campings/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1332)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 304)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 36.4ms | Allocations: 6351)
+Completed 200 OK in 43ms (Views: 40.7ms | ActiveRecord: 0.2ms | Allocations: 7645)
+
+
+Started GET "/menus" for 127.0.0.1 at 2021-11-22 12:09:54 -0300
+Processing by MenusController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering menus/index.html.erb within layouts/application
+  [1m[36mMenu Load (0.3ms)[0m  [1m[34mSELECT "menus".* FROM "menus"[0m
+  ↳ app/views/menus/index.html.erb:18
+  Rendered menus/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1331)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 305)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 42.8ms | Allocations: 5534)
+Completed 200 OK in 52ms (Views: 49.3ms | ActiveRecord: 0.3ms | Allocations: 7024)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2021-11-22 12:09:55 -0300
+Processing by ReservationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering reservations/index.html.erb within layouts/application
+  [1m[36mReservation Load (0.2ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations"[0m
+  ↳ app/views/reservations/index.html.erb:26
+  Rendered reservations/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1165)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 248)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 37.4ms | Allocations: 24705)
+Completed 200 OK in 39ms (Views: 38.5ms | ActiveRecord: 0.2ms | Allocations: 25566)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-11-22 12:09:56 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 239)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1270)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.7ms | Allocations: 225)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 35.8ms | Allocations: 5955)
+Completed 200 OK in 38ms (Views: 36.9ms | ActiveRecord: 0.0ms | Allocations: 6775)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-11-22 12:11:44 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.3ms | Allocations: 752)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2483)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in D:/Users/Ian Hein/GitHub/los_quebrachos/public/packs
+[Webpacker] Hash: f3dc35d4d7a5663ae20b
+Version: webpack 4.46.0
+Time: 1133ms
+Built at: 22/11/2021 12:11:48
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-c65ca5da76f0bd868a1f.js    125 KiB  application  [emitted] [immutable]  application
+js/application-c65ca5da76f0bd868a1f.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-c65ca5da76f0bd868a1f.js js/application-c65ca5da76f0bd868a1f.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered shared/_navbar.html.erb (Duration: 1.2ms | Allocations: 684)
+  Rendered shared/_footer.html.erb (Duration: 1.0ms | Allocations: 215)
+  Rendered layout layouts/application.html.erb (Duration: 4281.5ms | Allocations: 275302)
+Completed 200 OK in 4296ms (Views: 4294.8ms | ActiveRecord: 0.0ms | Allocations: 277435)
+
+
+Started GET "/previews" for 127.0.0.1 at 2021-11-22 12:11:55 -0300
+Processing by PreviewsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering previews/index.html.erb within layouts/application
+  Rendered previews/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 161)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 349)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 38.3ms | Allocations: 5865)
+Completed 200 OK in 45ms (Views: 43.3ms | ActiveRecord: 0.0ms | Allocations: 7216)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-11-22 12:11:59 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 239)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1271)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 225)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 34.6ms | Allocations: 5463)
+Completed 200 OK in 37ms (Views: 35.6ms | ActiveRecord: 0.0ms | Allocations: 6333)
+
+
+Started GET "/previews" for 127.0.0.1 at 2021-11-22 12:11:59 -0300
+Processing by PreviewsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering previews/index.html.erb within layouts/application
+  Rendered previews/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 49)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.6ms | Allocations: 272)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 35.1ms | Allocations: 4705)
+Completed 200 OK in 37ms (Views: 36.4ms | ActiveRecord: 0.0ms | Allocations: 5262)
+
+
+Started GET "/previews" for 127.0.0.1 at 2021-11-22 12:12:00 -0300
+Processing by PreviewsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering previews/index.html.erb within layouts/application
+  Rendered previews/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 49)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 270)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 33.7ms | Allocations: 4058)
+Completed 200 OK in 36ms (Views: 35.1ms | ActiveRecord: 0.0ms | Allocations: 4589)
+
+
+Started GET "/previews" for 127.0.0.1 at 2021-11-22 12:17:31 -0300
+Processing by PreviewsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering previews/index.html.erb within layouts/application
+  Rendered previews/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 49)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in D:/Users/Ian Hein/GitHub/los_quebrachos/public/packs
+[Webpacker] Hash: 1ec17ee807dbe8936007
+Version: webpack 4.46.0
+Time: 1168ms
+Built at: 22/11/2021 12:17:36
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-db2765a9888027212957.js    125 KiB  application  [emitted] [immutable]  application
+js/application-db2765a9888027212957.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-db2765a9888027212957.js js/application-db2765a9888027212957.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 516 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 273)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 4350.7ms | Allocations: 272094)
+Completed 200 OK in 4354ms (Views: 4351.7ms | Allocations: 272638)
+
+
+Started GET "/previews" for 127.0.0.1 at 2021-11-22 12:17:52 -0300
+Processing by PreviewsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering previews/index.html.erb within layouts/application
+  Rendered previews/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 163)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.2ms | Allocations: 763)
+  Rendered shared/_footer.html.erb (Duration: 0.6ms | Allocations: 215)
+  Rendered layout layouts/application.html.erb (Duration: 42.2ms | Allocations: 5526)
+Completed 200 OK in 50ms (Views: 47.9ms | Allocations: 7085)
+
+
+Started GET "/previews" for 127.0.0.1 at 2021-11-22 12:18:07 -0300
+Processing by PreviewsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering previews/index.html.erb within layouts/application
+  Rendered previews/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 168)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 1.6ms | Allocations: 763)
+  Rendered shared/_footer.html.erb (Duration: 0.7ms | Allocations: 215)
+  Rendered layout layouts/application.html.erb (Duration: 42.5ms | Allocations: 5531)
+Completed 200 OK in 50ms (Views: 47.8ms | Allocations: 7123)
+
+
+Started GET "/previews" for 127.0.0.1 at 2021-11-22 12:18:08 -0300
+Processing by PreviewsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering previews/index.html.erb within layouts/application
+  Rendered previews/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 49)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.6ms | Allocations: 272)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 31.2ms | Allocations: 4062)
+Completed 200 OK in 33ms (Views: 32.2ms | Allocations: 4657)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-11-22 12:18:09 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.2ms | Allocations: 750)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2474)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 274)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 36.2ms | Allocations: 6703)
+Completed 200 OK in 48ms (Views: 46.6ms | Allocations: 8740)
+
+
+Started GET "/previews" for 127.0.0.1 at 2021-11-22 12:18:09 -0300
+Processing by PreviewsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering previews/index.html.erb within layouts/application
+  Rendered previews/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 49)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 277)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 32.7ms | Allocations: 4710)
+Completed 200 OK in 35ms (Views: 34.4ms | Allocations: 5287)
+
+
+Started GET "/previews" for 127.0.0.1 at 2021-11-22 12:18:10 -0300
+Processing by PreviewsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering previews/index.html.erb within layouts/application
+  Rendered previews/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 49)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 272)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 35.8ms | Allocations: 4062)
+Completed 200 OK in 38ms (Views: 36.9ms | Allocations: 4610)
+
+
+Started GET "/previews" for 127.0.0.1 at 2021-11-22 12:18:10 -0300
+Processing by PreviewsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering previews/index.html.erb within layouts/application
+  Rendered previews/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 49)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.7ms | Allocations: 270)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 32.7ms | Allocations: 4058)
+Completed 200 OK in 34ms (Views: 33.5ms | Allocations: 4583)
+
+
+Started GET "/previews" for 127.0.0.1 at 2021-11-22 12:19:34 -0300
+Processing by PreviewsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering previews/index.html.erb within layouts/application
+  Rendered previews/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 923)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 20.4ms | Allocations: 768)
+  Rendered shared/_footer.html.erb (Duration: 10.2ms | Allocations: 215)
+  Rendered layout layouts/application.html.erb (Duration: 135.7ms | Allocations: 48822)
+Completed 200 OK in 144ms (Views: 141.6ms | Allocations: 51070)
+
+
+Started GET "/previews" for 127.0.0.1 at 2021-11-22 12:19:35 -0300
+Processing by PreviewsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering previews/index.html.erb within layouts/application
+  Rendered previews/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 49)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 270)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 32.0ms | Allocations: 4058)
+Completed 200 OK in 34ms (Views: 33.0ms | Allocations: 4651)
+
+
+Started GET "/previews" for 127.0.0.1 at 2021-11-22 12:22:06 -0300
+Processing by PreviewsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering previews/index.html.erb within layouts/application
+  Rendered previews/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 50)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 272)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 31.6ms | Allocations: 4063)
+Completed 200 OK in 35ms (Views: 33.9ms | Allocations: 4612)
+
+
+Started GET "/previews" for 127.0.0.1 at 2021-11-22 12:22:06 -0300
+Processing by PreviewsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering previews/index.html.erb within layouts/application
+  Rendered previews/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 49)
+[Webpacker] Everything's up-to-date. Nothing to do
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-11-22 12:22:07 -0300
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 270)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 371.5ms | Allocations: 7836)
+Completed 200 OK in 373ms (Views: 372.5ms | Allocations: 8382)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 31.8ms | Allocations: 1395)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 54.3ms | Allocations: 3750)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 3.1ms | Allocations: 275)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 88.7ms | Allocations: 7978)
+Completed 200 OK in 99ms (Views: 98.3ms | Allocations: 9951)
+
+
+Started GET "/previews" for 127.0.0.1 at 2021-11-22 12:22:07 -0300
+Processing by PreviewsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering previews/index.html.erb within layouts/application
+  Rendered previews/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 49)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 278)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 33.0ms | Allocations: 4737)
+Completed 200 OK in 35ms (Views: 34.3ms | Allocations: 5334)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-11-22 12:22:08 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 238)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1188)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 225)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 37.0ms | Allocations: 5853)
+Completed 200 OK in 40ms (Views: 38.6ms | Allocations: 6644)
+
+
+Started GET "/previews" for 127.0.0.1 at 2021-11-22 12:22:09 -0300
+Processing by PreviewsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering previews/index.html.erb within layouts/application
+  Rendered previews/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 49)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.6ms | Allocations: 272)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 35.4ms | Allocations: 4693)
+Completed 200 OK in 37ms (Views: 36.4ms | Allocations: 5241)
+
+
