@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
 class Menu < ApplicationRecord
-  has_many :menu_reservation
-  has_many :reservation, through: :menu_reservation
+  has_and_belongs_to_many :reservation
 end

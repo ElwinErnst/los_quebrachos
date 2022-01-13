@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
 class Cabin < ApplicationRecord
-  has_many :cabin_reservation
-  has_many :reservation, through: :cabin_reservation
+  has_and_belongs_to_many :reservation
 end

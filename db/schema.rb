@@ -10,16 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_11_16_215052) do
-
-  create_table "bathroom_reservations", force: :cascade do |t|
-    t.integer "reservation_id", null: false
-    t.integer "bathroom_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["bathroom_id"], name: "index_bathroom_reservations_on_bathroom_id"
-    t.index ["reservation_id"], name: "index_bathroom_reservations_on_reservation_id"
-  end
+ActiveRecord::Schema.define(version: 2022_01_13_200943) do
 
   create_table "bathrooms", force: :cascade do |t|
     t.string "ubication"
@@ -29,14 +20,9 @@ ActiveRecord::Schema.define(version: 2021_11_16_215052) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "cabin_reservations", force: :cascade do |t|
+  create_table "bathrooms_reservations", id: false, force: :cascade do |t|
+    t.integer "bathroom_id", null: false
     t.integer "reservation_id", null: false
-    t.integer "cabin_id", null: false
-    t.datetime "date"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["cabin_id"], name: "index_cabin_reservations_on_cabin_id"
-    t.index ["reservation_id"], name: "index_cabin_reservations_on_reservation_id"
   end
 
   create_table "cabins", force: :cascade do |t|
@@ -49,22 +35,17 @@ ActiveRecord::Schema.define(version: 2021_11_16_215052) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "cabins_reservations", id: false, force: :cascade do |t|
+    t.integer "cabin_id", null: false
+    t.integer "reservation_id", null: false
+  end
+
   create_table "campings", force: :cascade do |t|
     t.string "ubication"
     t.integer "area"
     t.integer "tents"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "menu_reservations", force: :cascade do |t|
-    t.integer "reservation_id", null: false
-    t.integer "menu_id", null: false
-    t.datetime "date"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["menu_id"], name: "index_menu_reservations_on_menu_id"
-    t.index ["reservation_id"], name: "index_menu_reservations_on_reservation_id"
   end
 
   create_table "menus", force: :cascade do |t|
@@ -76,6 +57,11 @@ ActiveRecord::Schema.define(version: 2021_11_16_215052) do
     t.datetime "date"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "menus_reservations", id: false, force: :cascade do |t|
+    t.integer "menu_id", null: false
+    t.integer "reservation_id", null: false
   end
 
   create_table "previews", force: :cascade do |t|
@@ -101,14 +87,9 @@ ActiveRecord::Schema.define(version: 2021_11_16_215052) do
     t.index ["user_id"], name: "index_reservations_on_user_id"
   end
 
-  create_table "room_reservations", force: :cascade do |t|
-    t.integer "reservation_id", null: false
+  create_table "reservations_rooms", id: false, force: :cascade do |t|
     t.integer "room_id", null: false
-    t.datetime "date"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["reservation_id"], name: "index_room_reservations_on_reservation_id"
-    t.index ["room_id"], name: "index_room_reservations_on_room_id"
+    t.integer "reservation_id", null: false
   end
 
   create_table "rooms", force: :cascade do |t|
@@ -140,15 +121,7 @@ ActiveRecord::Schema.define(version: 2021_11_16_215052) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "bathroom_reservations", "bathrooms"
-  add_foreign_key "bathroom_reservations", "reservations"
-  add_foreign_key "cabin_reservations", "cabins"
-  add_foreign_key "cabin_reservations", "reservations"
-  add_foreign_key "menu_reservations", "menus"
-  add_foreign_key "menu_reservations", "reservations"
   add_foreign_key "reservations", "campings"
   add_foreign_key "reservations", "states"
   add_foreign_key "reservations", "users"
-  add_foreign_key "room_reservations", "reservations"
-  add_foreign_key "room_reservations", "rooms"
 end

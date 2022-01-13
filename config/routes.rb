@@ -3,10 +3,6 @@
 Rails.application.routes.draw do
   resources :previews
   resources :reservations
-  resources :cabin_reservations
-  resources :room_reservations
-  resources :menu_reservations
-  resources :bathroom_reservations
   resources :cabins
   resources :rooms
   resources :menus
@@ -17,6 +13,6 @@ Rails.application.routes.draw do
 
   # pongo esta ruta solo por el primer commit hasta que hagamos las vistas de bienvenida
   # root "reservations#index"
-  root 'cabin_reservations#index'
+  root 'reservations#index'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

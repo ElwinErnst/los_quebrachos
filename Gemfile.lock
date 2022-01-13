@@ -95,6 +95,8 @@ GEM
       responders
       warden (~> 1.2.3)
     erubi (1.10.0)
+    ffi (1.15.4)
+    ffi (1.15.4-x64-mingw32)
     ffi (1.15.4-x86-mingw32)
     globalid (0.5.2)
       activesupport (>= 5.0)
@@ -118,7 +120,13 @@ GEM
     minitest (5.14.4)
     msgpack (1.4.2)
     nio4r (2.5.8)
+    nokogiri (1.12.5-arm64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.12.5-x64-mingw32)
+      racc (~> 1.4)
     nokogiri (1.12.5-x86-mingw32)
+      racc (~> 1.4)
+    nokogiri (1.12.5-x86_64-linux)
       racc (~> 1.4)
     omniauth (2.0.4)
       hashie (>= 3.4.6)
@@ -178,6 +186,8 @@ GEM
       sassc-rails (~> 2.1, >= 2.1.1)
     sassc (2.4.0)
       ffi (~> 1.9)
+    sassc (2.4.0-x64-mingw32)
+      ffi (~> 1.9)
     sassc-rails (2.1.2)
       railties (>= 4.0.0)
       sassc (>= 2.0)
@@ -233,6 +243,7 @@ GEM
     zeitwerk (2.5.1)
 
 PLATFORMS
+  arm64-darwin-20
   x64-mingw32
   x86-mingw32
   x86_64-linux
